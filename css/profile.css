@@ -1,0 +1,537 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: #F3F3F3;
+}
+
+.ui-w-80 {
+    width : 80px !important;
+    height: auto;
+}
+
+.sidebar {
+    width: 240px;
+    height: 100%;
+    background-color: #709FB0;
+    color: #fff;
+    padding: 35px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    position: fixed;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 60px;
+    margin-right: 0.3rem;
+  }
+  
+  .logo h4 {
+    font-size: 1.6rem;
+    margin-top: px;
+    letter-spacing: -0.5px;
+    color: #709fb0;
+  }
+  
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.add-button {
+    font-size: 1.5em;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    transition: background-color 0.3s; 
+}
+
+nav ul li i {
+    margin-right: 10px;
+    font-size: 1.2em; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center; 
+    flex-grow: 1;
+    padding: 10px;
+}
+
+nav ul li:hover {
+    background-color: #B4D1DB;
+    padding-left: 10px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+
+.user-info {
+    padding-top: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Main content styles */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 330px; 
+    margin-right: 20px; 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #343a40;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.stat-card {
+    margin: 10px;
+    max-width: calc(25% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    flex: 1;
+    margin: 0 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+    max-width: 23%;
+}
+
+.stat-card i {
+    font-size: 2em;
+    margin-bottom: 10px; 
+    color: #709FB0; 
+}
+
+
+.stat-card h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.stat-card p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+.stat-card span {
+    text-align: left;
+    font-size: 15px;
+    color: #28a745;
+}
+
+.chart, .reviews {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.chart {
+    height: 40%;
+    margin-bottom: 20px;
+}
+
+.chart h2, .reviews h2 {
+    margin: 0 0 20px;
+    color: #343a40;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background-color: #f4f4f4;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    white-space: nowrap; /* Prevent wrapping in header cells */
+}
+
+.pt span {
+    color: #28a745;
+}
+
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1em;
+    color: #343a40;
+}
+
+.pagination span {
+    margin-right: 20px;
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.pagination nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination nav ul li, .pagination nav ul i {
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.pagination nav ul li a {
+    text-decoration: none;
+    color: #709FB0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.pagination nav ul li a:hover, .pagination nav ul li a:focus {
+    color: #fff;
+}
+
+.pagination nav ul i {
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+
+/* ini css nya rekomendasi AI */
+.container {
+    margin-top: 20px;
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    /* margin: 20px auto;  */
+    width: 96%;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #495057;
+}
+
+.custom-multi-select {
+    position: relative;
+    width: 100%;
+}
+
+.form-section select, .form-section textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-section textarea {
+    height: 100px;
+    width: 97%;
+}
+
+.checkbox-group {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+}
+.checkbox-group label {
+    color: #626262;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+a.generate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #709FB0;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+a.generate-button:hover {
+    background-color: #00516e;
+    color: #ffffff;
+}
+
+
+/* css rekomendasi AI yg SCORE */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    margin: 20px 5px;
+    width: 200px; /* Sesuaikan lebar kartu sesuai kebutuhan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.score {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+canvas {
+    width: 200px; 
+    height: 200px; 
+}
+
+
+/* hasil generate page */
+.content {
+    /* margin-left: 270px; */
+    padding: 20px;
+}
+.card-gen {
+    background-color: #709FB0;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card-gen h2 {
+    margin-top: 0;
+}
+.card-gen ul {
+    list-style-type: none;
+    padding: 0;
+}
+.card-gen ul li {
+    margin: 10px 0;
+}
+
+/* css product */
+.content-product {
+    margin-left: 330px;
+    padding: 20px;
+    flex-grow: 1;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header h2 {
+    margin: 0;
+}
+.card-product {
+    background-color: white;
+    /* width: 95%; */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #3b555e;
+}
+.gambar {
+    width: 100px; /* Smaller width for images */
+    height: 100px; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align vertically with text */
+    margin-right: 10px; /* Space between image and text */
+}
+.charts {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.chart-card {
+    flex-grow: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.chart-card h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #3b555e;
+}
+.chart-card p {
+    margin: 10px 0;
+}
+.chart-bar {
+    height: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.table-responsive {
+    overflow-x: auto;
+    flex: 1;
+    margin-right: 20px; /* Space between table and buttons */
+}
+
+/* analytic */
+/* .tabs{
+    display: flex;
+    justify-content: center;
+} */
+
+/*report*/
+.report-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+.spending-report, .transaction-history {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+.spending-report h2, .transaction-history h2 {
+    margin-top: 0;
+}
+.report-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.report-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.report-card.green {
+    background-color: #e0f7e9;
+}
+.report-card.blue {
+    background-color: #e0f2f7;
+}
+.report-card h3 {
+    margin: 0;
+}
+
+
+/* detail product */
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.product img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.product-info {
+    flex: 1;
+}
+.product-info h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+.product-info p {
+    margin: 0;
+}
+.product-info .description {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.product-info .detail {
+    margin-top: 20px;
+}
+.detail p {
+    margin: 5px 0;
+}
+.detail p span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+canvas {
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+.card {
+    background-clip: padding-box;
+    box-shadow     : 0 1px 4px rgba(24, 28, 33, 0.012);
+}
